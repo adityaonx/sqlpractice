@@ -1,0 +1,41 @@
+### --- Python & Virtual Environments ---
+# No more "It works on my machine" – exclude local envs
+venv/
+.venv/
+env/
+bin/
+lib/
+include/
+pip-selfcheck.json
+
+### --- Project ReInvento Specifics ---
+# OrbStack / Docker local states
+.orbstack/
+# FastAPI / Pydantic temporary files
+.pytest_cache/
+__pycache__/
+*.py[cod]
+*$py.class
+
+### --- Data & Spark Artifacts ---
+# Exclude local data dumps to keep the repo lean
+data/raw/
+data/processed/
+# Spark / Delta Lake local logs and metastores
+spark-warehouse/
+metastore_db/
+derby.log
+.ipynb_checkpoints/
+
+### --- Secrets & Security ---
+# Never commit your AWS keys or Supabase credentials
+.env
+.env.local
+.aws/
+credentials.json
+
+### --- IDE & OS Trash ---
+.vscode/
+.idea/
+.DS_Store
+*.swp

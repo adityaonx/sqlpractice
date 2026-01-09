@@ -7,7 +7,7 @@ bin/
 lib/
 include/
 pip-selfcheck.json
-
+opt/
 ### --- Project ReInvento Specifics ---
 # OrbStack / Docker local states
 .orbstack/
